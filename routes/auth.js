@@ -21,7 +21,7 @@ router.get('/', auth, async (req, res) => {
         console.log(err.message);
 
         // Sends Server Error
-        res.status(500).json('Server Error');
+        res.status(500).send('Server Error');
     }
 });
 
@@ -80,7 +80,7 @@ router.post('/', [
              console.log(err.message);
 
              // Server error
-            res.status(500).json('Server error')
+            res.status(500).send('Server error')
         }
 });
 
